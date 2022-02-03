@@ -15,7 +15,9 @@ def create_plot(two_sided=False, colors = ['#6F4C9B', '#5568B8', '#4D8AC6',
                '#60AB9E', '#77B77D', '#A6BE54',
                '#D1B541', '#E49C39', '#DF4828', '#990D38'], markers = ['o', 'v', '^', 's', 'D', '*'], figsize=(5, 3.4)):
     """
-    Crée un environnement de plot
+    Makes a plot environnement. The only interest of this tool is that now
+    figsize dictates the size of the rectangle and not the size of the full
+    figure, which I find annoying.
 
     Parameters
     ----------
@@ -56,6 +58,7 @@ def create_plot(two_sided=False, colors = ['#6F4C9B', '#5568B8', '#4D8AC6',
 def legend_modulus(ax, loc='lower right', second_legend=False, bbox_to_anchor=0):
     """
     Function to automatically add a legend in oscillatory rheology tests
+    empty symbols are loss modulus and full symbols are storage modulus
     
     Parameters
     ----------
