@@ -30,6 +30,7 @@ def create_plot(two_sided=False, colors = ['#6F4C9B', '#5568B8', '#4D8AC6',
     Returns
     -------
     fig, ax : matplotlib objects to be used as normal
+    colors, markers : itertools cycles of colors and markers
 
     """
     color = cycle(colors)
